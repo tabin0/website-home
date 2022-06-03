@@ -1,7 +1,7 @@
 var ball_list;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 100);
   ball_list = new Balls();
 }
