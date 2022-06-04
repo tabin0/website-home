@@ -38,7 +38,7 @@ class ball{
   }
   
   inside(x, y){
-    if (dist(x, y, this.loc.x, this.loc.y) < r){
+    if (dist(x, y, this.loc.x, this.loc.y) < this.r){
       return true;
     } else{
       return false;
@@ -59,6 +59,10 @@ class ball{
     if ((this.loc.y > height) || (this.loc.y < 0)){
       this.vel.y = this.vel.y * -1; 
     }    
+  }
+  
+  openLink(){
+  
   }
   
   display(){
